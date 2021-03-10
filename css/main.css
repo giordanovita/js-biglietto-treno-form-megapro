@@ -10,20 +10,26 @@
 
  body{
     background-color:rgb(185, 20, 80);
-
+    font-family: 'Roboto', sans-serif;
  }
 
 
 
  
 .container{
-    width: 70%;
+    width: 80%;
     height: 100vh;
     margin: auto;
     display:flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
+
+}
+
+h2{
+    color: white;
+    align-self: center;
 
 }
 
@@ -34,5 +40,81 @@
     margin: 20px 0;
     padding:20px;
     color: black;
+    
 }
 
+.row{
+    border-radius: 7px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input input, .input  select{
+    border:1px solid rgb(185, 20, 80);
+    border-radius: 5px;
+    margin-top: 15px;
+
+
+}
+
+.input{
+    margin: auto;
+    display: flex;
+
+    justify-content: space-around;
+}
+
+label{
+    color: rgb(185, 20, 80);
+    text-align: center;
+    font-weight: 500;
+}
+
+.actions{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#genera, #annulla{
+    padding:3px 4px;
+    background-color: rgb(204, 204, 204);
+    margin: 0 5px;
+    border-radius: 5px;
+    border:1px solid rgb(137, 137, 137);
+
+}
+
+.flex-table{
+    display:flex;
+    justify-content: space-between;
+    min-height: 30vh;
+    border-top: 1px  solid black;
+    border-bottom: 1px  solid black;
+
+}
+
+.flex-table div{
+    background-color: rgb(128, 128, 128);
+    min-height: 70%;
+    padding: 10px;
+}
+
+.flex-table table{
+    flex-grow: 1;
+    min-height: 70%;
+    padding-top: 30px;
+
+}
+
+ td{
+    text-align: center;
+} 
+
+.result{
+    color:green;
+    text-align: center;
+}
