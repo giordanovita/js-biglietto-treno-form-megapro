@@ -91,7 +91,7 @@ label{
 .flex-table{
     display:flex;
     justify-content: space-between;
-    min-height: 30vh;
+    height: 30vh;
     border-top: 1px  solid black;
     border-bottom: 1px  solid black;
 
@@ -105,9 +105,16 @@ label{
 
 .flex-table table{
     flex-grow: 1;
-    min-height: 70%;
+    height: 70%;
     padding-top: 30px;
+    width: 80%;
 
+
+}
+
+.passegero{
+    font-weight: 600;
+    text-decoration: underline;
 }
 
  td{
@@ -115,6 +122,5 @@ label{
 } 
 
 .result{
-    color:green;
     text-align: center;
 }

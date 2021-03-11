@@ -17,7 +17,6 @@ btnGenerator.addEventListener('click', function(){
         
         totalPrice = price * distance;
 
-        //console.log(totalPrice)
         if ( age == 1){
             console.log('minorenne', age);
             var sconto = totalPrice * 0.2;
@@ -31,9 +30,8 @@ btnGenerator.addEventListener('click', function(){
 
         }
 
-/* blocco else if per applicazione sconto
- */
-    parseFloat(document.getElementById('totalPrice').innerHTML = totalPrice.toFixed(2)) ;
+
+    parseFloat(document.getElementById('totalPrice').innerHTML = '€'+ ' ' + totalPrice.toFixed(2) ) ;
     var cp = Math.floor(Math.random() * 10000) +90000 ;
         document.getElementById('codCp').innerHTML = '<span class=result>' + cp + '</span>'
 
@@ -41,17 +39,32 @@ btnGenerator.addEventListener('click', function(){
         document.getElementById('carriage').innerHTML = carriage
 
     document.getElementById('tariff').innerHTML = tariff;
-    document.getElementById('client').innerHTML += '<br>' + nameC;
+    document.getElementById('client').innerHTML += '<br>' + '<span class=passegero>' + nameC + '</span>';
     
 
    }else{
-    console.log('no');
+    console.log('errore');
 
    }
 
 });
 
+
+
 btnCancel.addEventListener('click', function(){
-   var cancel = document.getElementById('annulla').value;
-});
+
+    document.getElementById('name').value = "";
+    document.getElementById("distance").value = "";
+    document.getElementById('age').value = "";
+  
+    document.getElementById("client").innerHTML = "";
+    document.getElementById("tariff").innerHTML = "";
+    document.getElementById("carriage").innerHTML = "";
+    document.getElementById("codCp").innerHTML = "";
+    document.getElementById("totalPrice").innerHTML = "";
+
+
+})
+
+
 
